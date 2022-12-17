@@ -1,6 +1,7 @@
 import { IsNotEmpty, IsUUID, Length } from 'class-validator';
 
 export class CreateNotificationRequest {
+   
    @IsNotEmpty()
    @IsUUID()  
    recipientId: string;
